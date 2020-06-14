@@ -1,0 +1,106 @@
+@import 'config';
+@import 'utilities';
+@import 'form';
+
+//  Resers
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+// Base styles
+body {
+   font-family: 'Bitter', sans-serif;
+   font-size: 1.6rem;
+   line-height: 1.6;
+   background-color: $lightColor;
+   color: $darkColor;
+}
+
+a {
+   text-decoration: none;
+   color: $primaryColor;
+}
+
+ul {
+   list-style: none;
+}
+
+img {
+   width: 100%;
+}
+
+// Navbar
+.navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 12rem;
+   width: 100%;
+   height: 6rem;
+   border-bottom: 1px solid $primaryColor;
+   opacity: 0.8;
+   //    always on top
+   position: fixed;
+   z-index: 1;
+   top: 0;
+
+   // Logo
+   .logo__box {
+      height: 100%;
+      width: 100%;
+   }
+   .logo {
+      display: flex;
+      align-items: center;
+
+      font-family: 'Permanent Marker';
+   }
+
+   //    navlinks
+   &__link {
+      &:not(:last-child) {
+         margin-right: 1.5rem;
+      }
+   }
+   ul {
+      display: flex;
+   }
+   a {
+      color: $darkColor;
+
+      &:hover {
+         color: $primaryColor;
+      }
+   }
+}
+
+// Landing page
+.landing {
+   position: relative;
+   background-image: url('../img/christina-wocintechchat-com-R_W_9D-53lw-unsplash.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+
+   //    Content
+   &__inner {
+      padding: 0 12rem;
+
+      color: $lightColor;
+
+      height: 100%;
+      width: 80%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+}
