@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+      <!-- Style -->
+      <link rel="stylesheet" href="./css/style.min.css" />
+      <!-- Fonts -->
+      <link
+         href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&display=swap"
+         rel="stylesheet"
+      />
+      <!-- Title -->
+      <title>creativiti</title>
+
+      <!-- FontAwesome -->
+      <script
+         src="https://kit.fontawesome.com/295e16ae52.js"
+         crossorigin="anonymous"
+      ></script>
+   </head>
+
+   <!-- BODY -->
+   <body>
+      <!-- NavBar -->
+      <nav class="navbar bg--lighter">
+         <h1 class="logo__box">
+            <a class="logo" href="./dashboard.html"
+               ><img
+                  class="logo__img"
+                  src="./img/b2613dc6-65cf-488a-9cb5-db1110f865e6_200x200.png"
+                  alt="logo"
+               />
+               <span class="logo__type">creativiti</span>
+            </a>
+         </h1>
+         <ul>
+            <li class="navbar__link">
+               <a href="./profiles.html">Creators</a>
+            </li>
+            <li class="navbar__link"><a href="./register.html">Register</a></li>
+            <li class="navbar__link"><a href="./login.html">Login</a></li>
+         </ul>
+      </nav>
+
+      <!-- profile Area -->
+      <section class="container">
+         <!-- back to profiles -->
+         <a href="./profiles.html" class="btn btn--dark profile__backbtn"
+            >Back to profiles</a
+         >
+
+         <!-- Profile -->
+         <div class="profile__grid m-v-1">
+            <!-- top -->
+            <div class="profile__top bg--primary p-2">
+               <img
+                  class="roundImage"
+                  src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+                  alt="profile image"
+               />
+               <h1 class="x-large cursiveText">Jessica Doe</h1>
+               <p class="lead">Creator and UI developer at Sillicon Valley</p>
+               <p>Portlan, OR</p>
+               <div class="icons m-v-1">
+                  <a href="#"><i class="fas fa-globe fa-2x"></i></a>
+                  <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                  <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                  <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                  <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+               </div>
+            </div>
+            <!-- About -->
+            <div class="profile__about bg--dark p-2">
+               <h2 class="greenSpan large cursiveText">Jessica's Bio</h2>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                  sint eos, earum temporibus nesciunt id nemo? Consequatur optio
+                  fuga eius adipisci consequuntur, sequi recusandae temporibus
+                  consectetur, voluptatibus quas vero eum ad.
+               </p>
+               <div class="line"></div>
+               <h2 class="greenSpan large cursiveText">
+                  Skill Set
+               </h2>
+               <div class="skills">
+                  <div class="p-1">
+                     &#10004; Figma
+                  </div>
+                  <div class="p-1">
+                     &#10004; HTML
+                  </div>
+                  <div class="p-1">
+                     &#10004; CSS
+                  </div>
+                  <div class="p-1">
+                     &#10004; UI Design
+                  </div>
+                  <div class="p-1">
+                     &#10004; Content creation
+                  </div>
+               </div>
+            </div>
+            <!-- Experience -->
+            <div class="profile__experience bg--light p-2">
+               <h2 class="greenSpan large cursiveText">
+                  Experiences
+               </h2>
+               <div>
+                  <h3 class="lead">Microsoft</h3>
+                  <p>Oct, 2011 - Current</p>
+                  <p><strong>Position:</strong> Senior UI designer</p>
+                  <p>
+                     <strong>Description:</strong> Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Est labore amet repellendus
+                     magnam minima dignissimos?
+                  </p>
+               </div>
+               <div>
+                  <h3 class="lead">Sun Microsystems</h3>
+                  <p>Oct, 2004 - November, 2010</p>
+                  <p><strong>Position:</strong> Prouct lead</p>
+                  <p>
+                     <strong>Description:</strong> Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Est labore amet repellendus
+                     magnam minima dignissimos?
+                  </p>
+               </div>
+            </div>
+            <!-- Education -->
+            <div class="profile__education bg--light p-2">
+               <h2 class="greenSpan large cursiveText">
+                  Education
+               </h2>
+               <div>
+                  <h3 class="lead">Maryland Univrsity</h3>
+                  <p>August, 1995 - 2000</p>
+                  <p><strong>Degree:</strong> Master's</p>
+                  <p><strong>Field of Study:</strong> Product Design</p>
+                  <p>
+                     <strong>Description:</strong> Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Est labore amet repellendus
+                     magnam minima dignissimos?
+                  </p>
+               </div>
+               <div>
+                  <h3 class="lead">Sun Microsystems</h3>
+                  <p>Oct, 2004 - November, 2010</p>
+                  <p><strong>Position:</strong> Prouct lead</p>
+                  <p>
+                     <strong>Description:</strong> Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Est labore amet repellendus
+                     magnam minima dignissimos?
+                  </p>
+               </div>
+            </div>
+            <!-- Github Repos -->
+            <div class="profile__github p-2">
+               <h2 class="greenSpan large cursiveText m-v-1">
+                  <i class="fab fa-github"></i> Github repos
+               </h2>
+               <!-- repo 1 -->
+               <div class="repo bg--light m-v-1 p-2">
+                  <div>
+                     <h4><a href="#">Repo One</a></h4>
+                     <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illo, esse.
+                     </p>
+                  </div>
+
+                  <div>
+                     <ul>
+                        <li class="badge badge--primary">Stars: 333</li>
+                        <li class="badge badge--dark">Watchers: 27</li>
+                        <li class="badge badge--light">Forks: 9</li>
+                     </ul>
+                  </div>
+               </div>
+               <!-- Repo 2 -->
+               <div class="repo bg--light m-v-1 p-2">
+                  <div>
+                     <h4><a href="#">Repo One</a></h4>
+                     <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illo, esse.
+                     </p>
+                  </div>
+
+                  <div>
+                     <ul>
+                        <li class="badge badge--primary">Stars: 333</li>
+                        <li class="badge badge--dark">Watchers: 27</li>
+                        <li class="badge badge--light">Forks: 9</li>
+                     </ul>
+                  </div>
+               </div>
+               <!-- Repo 3 -->
+               <div class="repo bg--light m-v-1 p-2">
+                  <div>
+                     <h4><a href="#">Repo One</a></h4>
+                     <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illo, esse.
+                     </p>
+                  </div>
+
+                  <div>
+                     <ul>
+                        <li class="badge badge--primary">Stars: 333</li>
+                        <li class="badge badge--dark">Watchers: 27</li>
+                        <li class="badge badge--light">Forks: 9</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </body>
+</html>

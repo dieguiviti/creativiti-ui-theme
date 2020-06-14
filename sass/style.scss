@@ -104,3 +104,115 @@ img {
       justify-content: center;
    }
 }
+
+// Profiles page
+.profile {
+   display: grid;
+   grid-template-columns: 2fr 4fr 2fr;
+   align-items: center;
+   grid-gap: 2rem;
+   padding: 1rem;
+   line-height: 1.8;
+   margin-bottom: 1rem;
+   border: 1px solid $darkColor;
+   border-radius: 3px;
+
+   &__backbtn {
+      width: 18rem;
+   }
+}
+
+// Profile page
+.profile__grid {
+   display: grid;
+   grid-template-areas: 'top about' 'experience education' 'github github';
+   grid-gap: 1.6rem;
+
+   & > * {
+      border-radius: 0.3rem;
+   }
+
+   .profile__top {
+      grid-area: top;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      img {
+         width: 25rem;
+      }
+
+      .icons a {
+         color: $darkColor;
+         margin: 0 0.6rem;
+         transition: all 0.3s;
+
+         &:hover {
+            color: $lightColor;
+         }
+      }
+   }
+   .profile__about {
+      grid-area: about;
+
+      text-align: center;
+
+      p {
+         margin: 0.9rem 0;
+      }
+
+      .skills {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+      }
+   }
+   .profile__experience {
+      grid-area: experience;
+
+      p {
+         margin: 0.9rem 0;
+      }
+   }
+   .profile__education {
+      grid-area: education;
+      p {
+         margin: 0.9rem 0;
+      }
+   }
+   .profile__experience > div,
+   .profile__education > div {
+      &:not(:last-child) {
+         margin-bottom: 1.6rem;
+         padding-bottom: 1.6rem;
+         border-bottom: 1px solid rgba($darkColor, 0.6);
+      }
+   }
+
+   .profile__github {
+      grid-area: github;
+
+      & > * {
+         border-radius: 0.3rem;
+      }
+
+      .repo {
+         display: flex;
+
+         & > div:first-child {
+            flex: 7;
+            flex-basis: 70%;
+         }
+
+         & > div:last-child {
+            flex: 3;
+            flex-basis: 20%;
+         }
+      }
+   }
+}
